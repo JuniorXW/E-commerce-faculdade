@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Cadastro</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/cadastro.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="login-container">
+                        <div class="logo-container">
+                            <a href="index.html" class="logo"> <i class="fas fa-shopping-bag"></i> D&J IMPORTS </a>
+                        </div>
+                    <div class="card-header text-center">
+                        <h3>Cadastro</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="cadastro.php" method="post">
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="username">Nome de Usuário</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Data de Nascimento</label>
+                                <input type="date" class="form-control" id="dob" name="dob" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Endereço</label>
+                                <input type="text" class="form-control" id="address" name="address" placeholder="Digite seu endereço" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Sexo</label>
+                                <select class="form-control" id="gender" name="gender" required>
+                                    <option value="" disabled selected>Selecione seu sexo</option>
+                                    <option value="male">Masculino</option>
+                                    <option value="female">Feminino</option>
+                                    <option value="other">Outro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Senha</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="Digite sua senha" required>
+                             
+                            </div>
+                            <div class="form-group d-flex justify-content-between">
+                                <button type="submit" class="btn btn-primary">Cadastrar-se</button>
+                                <button type="button" class="btn btn-secondary">Já é cadastrado? Faça login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
